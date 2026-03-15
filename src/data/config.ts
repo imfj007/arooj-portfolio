@@ -1,9 +1,8 @@
 const config = {
   title: "Arooj Jamil | SEO Executive & Digital Marketing Specialist",
   description: {
-    long: "Explore the portfolio of Arooj Jamil, an SEO Executive and Digital Marketing Specialist with expertise in on-page SEO, off-page SEO, technical SEO, keyword research, content strategy, and creative design. Helping brands grow online through data-driven SEO & creative campaigns.",
-    short:
-      "Discover the portfolio of Arooj Jamil, an SEO Executive & Digital Marketing Specialist helping brands grow online.",
+    long: "Explore the portfolio of Arooj Jamil, an SEO Executive and Digital Marketing Specialist with expertise in on-page SEO, off-page SEO, technical SEO, keyword research, content strategy, and creative design.",
+    short: "SEO Executive with 4+ years experience in On-Page, Off-Page & Technical SEO, based in Lahore, Pakistan.",
   },
   keywords: [
     "Arooj Jamil",
@@ -22,7 +21,7 @@ const config = {
     "Social Media Marketing",
   ],
   author: "Arooj Jamil",
-  email: "aroojrajpoot22999@gmail.com",
+  email: "ajmarketagency22@gmail.com",
   site: "https://imfj007.github.io/arooj-portfolio",
 
   // for github stars button
@@ -32,12 +31,13 @@ const config = {
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
+
+
   social: {
-    twitter: "",
-    linkedin: "",
-    instagram: "",
-    facebook: "",
-    github: "",
+    linkedin: "https://www.linkedin.com/in/arooj-rajpoot-134229347/",
+    facebook: "https://www.facebook.com/profile.php?id=61578948003777",
+    whatsapp: "https://wa.me/923154911641",
+
   },
 };
 export { config };

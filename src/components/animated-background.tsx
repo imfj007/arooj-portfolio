@@ -415,15 +415,17 @@ const AnimatedBackground = () => {
       teardownKeyboard?.kill();
     };
   }, [activeSection, splineApp]);
-
   // Reveal keyboard on load/route change
   useEffect(() => {
     const hash = activeSection === "hero" ? "#" : `#${activeSection}`;
-    router.push("/" + hash, { scroll: false });
+
+    if (typeof window !== 'undefined') {
+      window.history.replaceState(null, '', hash === '#' ? window.location.pathname : hash);
+    }
 
     if (!splineApp || isLoading || keyboardRevealed) return;
     updateKeyboardTransform();
-  }, [splineApp, isLoading, activeSection]);
+  }, [splineApp, isLoading, activeSection, keyboardRevealed, updateKeyboardTransform]);
 
   return (
     <Suspense fallback={<div>Loading...</div>}>

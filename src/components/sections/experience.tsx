@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const ExperienceSection = () => {
   return (
     <SectionWrapper
+      id="experience"
       className="flex flex-col items-center justify-center min-h-[120vh] py-20 z-10"
     >
       <div className="w-full max-w-4xl px-4 md:px-8 mx-auto">
@@ -69,7 +70,13 @@ const ExperienceCard = ({
                 {experience.company}
               </div>
             </div>
-            <Badge variant="secondary" className="w-fit font-mono text-xs font-normal">
+            <Badge
+              variant={experience.current ? "default" : "secondary"}
+              className={cn(
+                "w-fit font-mono text-xs font-normal",
+                experience.current && "bg-white text-black font-semibold tracking-wide"
+              )}
+            >
               {experience.startDate} - {experience.endDate}
             </Badge>
           </div>

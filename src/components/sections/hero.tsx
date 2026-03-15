@@ -82,12 +82,11 @@ const HeroSection = () => {
               </div>
               <div className="mt-8 flex flex-col gap-3 w-fit">
                 <Link
-                  href={"#projects"}
+                  href={"#experience"}
                   className="flex-1"
                 >
                   <BoxReveal delay={2} width="100%" >
                     <Button className="flex items-center gap-2 w-full">
-                      <File size={24} />
                       <p>View My Work</p>
                     </Button>
                   </BoxReveal>

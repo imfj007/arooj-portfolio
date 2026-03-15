@@ -3,7 +3,7 @@
 Personal portfolio of Arooj Jamil
 SEO Executive | Digital Marketing Specialist | Creative Strategist
 📍 Lahore, Pakistan
-📧 aroojrajpoot22999@gmail.com
+📧 ajmarketagency22@gmail.com
 
 Built with Next.js, Tailwind CSS, Spline, GSAP & Framer Motion.
 

@@ -10,29 +10,19 @@ import AppOverlays from "@/components/app-overlays";
 import { Providers } from "@/components/providers";
 
 export const metadata: Metadata = {
-  title: config.title,
-  description: config.description.long,
+  metadataBase: new URL(config.site),
+  title: "Arooj Jamil | SEO Executive & Digital Marketing Specialist",
+  description: "SEO Executive with 4+ years experience in On-Page, Off-Page & Technical SEO, based in Lahore, Pakistan.",
   keywords: config.keywords,
   authors: [{ name: config.author }],
   openGraph: {
-    title: config.title,
-    description: config.description.short,
-    url: config.site,
-    images: [
-      {
-        url: config.ogImg,
-        width: 800,
-        height: 600,
-        alt: "Portfolio preview",
-      },
-    ],
-    type: "website",
+    title: "Arooj Jamil | SEO Executive & Digital Marketing Specialist",
+    description: "SEO Executive with 4+ years experience. Lahore, Pakistan.",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Arooj Jamil Portfolio" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: config.title,
-    description: config.description.short,
-    images: [config.ogImg],
+    images: ["/og.png"],
   },
   robots: {
     index: true,

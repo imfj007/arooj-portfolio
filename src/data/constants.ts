@@ -245,19 +245,40 @@ export type Experience = {
   company: string;
   description: string[];
   skills: SkillNames[];
+  current?: boolean;
 };
 
 export const EXPERIENCE: Experience[] = [
   {
     id: 1,
-    startDate: "Jun 2025",
+    current: true,
+    startDate: "Current",
     endDate: "Present",
+    title: "E-Commerce Intern",
+    company: "Bano Qabil, Lahore",
+    description: [
+      "Currently executing e-commerce marketing strategies",
+      "Product listing optimization and online store growth",
+      "E-commerce SEO, paid ads, and conversion strategies",
+      "Supporting digital campaigns for e-commerce clients",
+    ],
+    skills: [
+      SkillNames.ONPAGE_SEO,
+      SkillNames.TECHNICAL_SEO,
+      SkillNames.PAID_ADS,
+      SkillNames.CONTENT_STRATEGY,
+    ],
+  },
+  {
+    id: 2,
+    startDate: "June 2025",
+    endDate: "Dec 2025",
     title: "Digital Marketing Mentor",
     company: "Bano Qabil, Lahore",
     description: [
-      "Mentoring students in SEO, social media marketing, and content strategy.",
-      "Guiding learners on practical campaigns, analytics & digital growth.",
-      "Managing and optimizing digital marketing projects.",
+      "Mentored students & professionals in SEO, social media marketing, content strategy",
+      "Guided learners on practical campaigns, analytics & digital growth",
+      "Managed and optimized digital marketing projects",
     ],
     skills: [
       SkillNames.ONPAGE_SEO,
@@ -267,16 +288,16 @@ export const EXPERIENCE: Experience[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     startDate: "Jan 2025",
     endDate: "Oct 2025",
     title: "SEO & Digital Marketing Intern",
     company: "Meta Play Studio, Lahore",
     description: [
-      "Executed SEO campaigns for organic visibility improvement.",
-      "Keyword research, audits & performance tracking.",
-      "Designed marketing posts using Canva.",
-      "Social media marketing for audience engagement.",
+      "Executed SEO campaigns for organic visibility improvement",
+      "Keyword research, website audits & performance tracking",
+      "Designed marketing posts using Canva",
+      "Social media marketing for audience engagement",
     ],
     skills: [
       SkillNames.KEYWORD_RESEARCH,
@@ -287,15 +308,15 @@ export const EXPERIENCE: Experience[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     startDate: "Ongoing",
     endDate: "Present",
     title: "Graphic Designer",
     company: "Block X & Justouch, Lahore",
     description: [
-      "Social media creatives via Photoshop & Illustrator.",
-      "Logo design, branding & print materials.",
-      "Brand consistency across all platforms.",
+      "Social media creatives via Photoshop & Illustrator",
+      "Logo design, branding & print materials",
+      "Maintained brand consistency across all platforms",
     ],
     skills: [
       SkillNames.PHOTOSHOP,
@@ -306,15 +327,15 @@ export const EXPERIENCE: Experience[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     startDate: "Aug 2023",
-    endDate: "Mar 2025",
+    endDate: "March 2025",
     title: "SEO Manager",
     company: "Mughal Software House, Lahore",
     description: [
-      "Led SEO team, executed on-page, off-page & technical SEO.",
-      "Improved organic traffic & keyword rankings for multiple clients.",
-      "Analyzed metrics and optimized campaigns.",
+      "Led SEO team, executed on-page, off-page & technical SEO",
+      "Improved organic traffic & keyword rankings for multiple clients",
+      "Analyzed metrics and optimized campaigns for measurable results",
     ],
     skills: [
       SkillNames.ONPAGE_SEO,
@@ -326,15 +347,15 @@ export const EXPERIENCE: Experience[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     startDate: "Oct 2021",
     endDate: "Aug 2023",
     title: "SEO Executive",
     company: "Mughal Software House, Lahore",
     description: [
-      "SEO strategies for client websites.",
-      "Competitor analysis, keyword research & link building.",
-      "Content optimization & site authority building.",
+      "Executed SEO strategies for client websites",
+      "Competitor analysis, keyword research & link building",
+      "Content optimization & site authority building",
     ],
     skills: [
       SkillNames.KEYWORD_RESEARCH,

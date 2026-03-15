@@ -33,11 +33,8 @@ const ContactSection = () => {
               >
                 {config.email.replace(/@/g, "(at)")}
               </a>{" "}
-              or call <span className="text-gray-200">0315-4911641</span>.
-              <br />
+              or contact me below.<br />
               <span className="text-gray-400">📍 Lahore, Pakistan</span>
-              <br />
-              Or drop your info here.
             </CardDescription>
           </CardHeader>
           <CardContent>
